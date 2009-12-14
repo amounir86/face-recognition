@@ -4,7 +4,7 @@ fid = fopen('Labeling2-3.txt','w');
 fprintf(fid,'video2.mat\n');
 fprintf(fid,'Observer: %s\n',obs_name);
 figure
-fprintf(fid,'Session: %d\n',s);
+fprintf(fid,'Session: %d\n',1);
 for i=1:length(seq)
     fprintf (1, 'Frame %d of 200\n', i);
     a=seq{i};
