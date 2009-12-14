@@ -11,6 +11,7 @@ for s=1:3
         imshow(a)
         key=32;
         while(key==32)
+            clear x y;
             [x y] = ginput(2);
             if (length(x)==2)
                 person_name = input('Name: ','s');
