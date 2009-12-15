@@ -1,6 +1,6 @@
-labeling = readFile('Labeling2.txt');
+labeling = readFile('Labeling1.txt');
 
-fid = fopen('ANNOTATION_VIDEO2_MAX.txt','w');
+fid = fopen('ANNOTATION_VIDEO1_MAX.txt','w');
 fprintf(fid,'%s\n',labeling.videoname);
 fprintf(fid,'%s\n',labeling.expertname);
 
