@@ -1,4 +1,4 @@
-labeling = readFile('Labeling2.txt');
+labeling = readFile('ANNOTATION_VIDEO2_MAX.txt');
 
 fid = fopen('statistics2.txt','w');
 fprintf(fid,'%s\n',labeling.videoname);

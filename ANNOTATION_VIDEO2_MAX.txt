@@ -1,7 +1,5 @@
 video2.mat
-
 Observer: Ahmed
-
 Session: 1
 3 [106 6.050000e+001 15 15] Chandler
  7 [167 66 38 38] Phoebe
@@ -131,7 +129,7 @@ Session: 1
  196 [119 69 44 44] Phoebe
  197 [1.165000e+002 70 44 44] Phoebe
  198 [138 101 68 68] Dunno2
- Session: 2
+Session: 2
 7 [167 6.150000e+001 37 37] Phoebe
  8 [141 64 26 26] Phoebe
  9 [144 62 34 34] Phoebe
@@ -272,7 +270,7 @@ Session: 1
  196 [1.185000e+002 6.950000e+001 51 51] Phoebe
  197 [1.125000e+002 7.150000e+001 53 53] Phoebe
  198 [138 96 74 74] Dunno2
- Session: 3
+Session: 3
 7 [1.675000e+002 6.550000e+001 45 45] Phoebe
  8 [138 62 36 36] Phoebe
  9 [1.415000e+002 62 38 38] Phoebe
@@ -408,4 +406,3 @@ Session: 1
  197 [117 7.050000e+001 47 47] Phoebe
  198 [1.395000e+002 97 76 76] Dunno2
  200 [168 7.450000e+001 37 37] Phoebe
- 
