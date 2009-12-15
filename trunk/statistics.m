@@ -1,6 +1,6 @@
-labeling = readFile('Labeling1.txt');
+labeling = readFile('Labeling2.txt');
 
-fid = fopen('statistics.txt','w');
+fid = fopen('statistics2.txt','w');
 fprintf(fid,'%s\n',labeling.videoname);
 fprintf(fid,'%s\n',labeling.expertname);
 

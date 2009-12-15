@@ -1,0 +1,35 @@
+video2.mat
+
+Observer: Ahmed
+
+Labeled faces at each session: 
+Session: 1 Faces: 128
+Chandler: 31
+Dunno: 3
+Dunno2: 1
+Joey: 9
+Monica: 25
+Phoebe: 17
+Rachel: 15
+Ross: 27
+Mean size of the face squares: 2.801563e+001
+Session: 2 Faces: 140
+Chandler: 31
+Dunno: 5
+Dunno2: 1
+Joey: 11
+Monica: 29
+Phoebe: 19
+Rachel: 15
+Ross: 29
+Mean size of the face squares: 2.942857e+001
+Session: 3 Faces: 135
+Chandler: 30
+Dunno: 4
+Dunno2: 1
+Joey: 13
+Monica: 26
+Phoebe: 20
+Rachel: 15
+Ross: 26
+Mean size of the face squares: 2.888148e+001

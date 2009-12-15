@@ -1,6 +1,6 @@
-labeling = readFile('Labeling1.txt');
+labeling = readFile('Labeling2.txt');
 
-fid = fopen('ANNOTATION_VIDEO1.txt','w');
+fid = fopen('ANNOTATION_VIDEO2_MAX.txt','w');
 fprintf(fid,'%s\n',labeling.videoname);
 fprintf(fid,'%s\n',labeling.expertname);
 
@@ -16,8 +16,8 @@ for i=1:3
         w = labeling.data{i}(j).w;
         h = labeling.data{i}(j).h;
         
-        med = (h+w)/2;
-        
+        med = max(h,w);
+        %med = (h+w)/2;
         cenx = x+w/2;
         ceny = y+h/2;
         
