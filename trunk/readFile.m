@@ -1,8 +1,8 @@
-function [labeling] = readFile(filename)
+function [labeling] = readFile(filename,session_num)
 %READFILE Reads a text file with the recorded labelings
 
 % Number of sessions
-session_num=3;
+% session_num=3;
 
 % Open the TXT file and read video name and expert name
 fid=fopen(filename,'r');
@@ -16,6 +16,8 @@ labeling.data=cell(session_num,1);
 % Read the next line of the file
 buffer = fgets(fid);
 
+session_count = 0;
+
 % While not reaching the end of file
 while (buffer~=-1)
     % Parse the string to see if it's the starting of a new session
@@ -28,17 +30,18 @@ while (buffer~=-1)
 
         facecount
         framedata = sscanf(buffer,'%d [%f %f %f %f] %s');
-        labeling.data{current_session}(facecount).framenum = framedata(1);
-        labeling.data{current_session}(facecount).x = framedata(2);
-        labeling.data{current_session}(facecount).y = framedata(3);
-        labeling.data{current_session}(facecount).w = framedata(4);
-        labeling.data{current_session}(facecount).h = framedata(5);
-        labeling.data{current_session}(facecount).label = char(framedata(6:end)');
+        labeling.data{session_count}(facecount).framenum = framedata(1);
+        labeling.data{session_count}(facecount).x = framedata(2);
+        labeling.data{session_count}(facecount).y = framedata(3);
+        labeling.data{session_count}(facecount).w = framedata(4);
+        labeling.data{session_count}(facecount).h = framedata(5);
+        labeling.data{session_count}(facecount).label = char(framedata(6:end)');
         facecount=facecount+1;
     else
         % The line read indicates the start of a new session, so update the
         % session counter, and reset the face counter
         current_session=session;
+        session_count = session_count+1;
         facecount=1;
     end
     buffer = fgets(fid);

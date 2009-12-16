@@ -1,6 +1,9 @@
-labeling = readFile('ANNOTATION_VIDEO2_MAX.txt');
+function statistics(inputFile,outputFile)
+% labeling = readFile('ANNOTATION_VIDEO2_MAX.txt');
+labeling = readFile(inputFile);
 
-fid = fopen('statistics2.txt','w');
+% fid = fopen('statistics2.txt','w');
+fid = fopen(outputFile,'w');
 fprintf(fid,'%s\n',labeling.videoname);
 fprintf(fid,'%s\n',labeling.expertname);
 
@@ -20,3 +23,5 @@ for i=1:3
    fprintf(fid,'%d\n',a);
    
 end
+
+fclose(fid)
