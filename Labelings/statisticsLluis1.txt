@@ -1,0 +1,42 @@
+video1.mat
+
+Observer: Lluis
+
+Labeled faces at each session: 
+Session: 1 Faces: 172
+castanya1: 3
+chedler: 24
+fibi: 34
+hedler: 1
+joey: 11
+monica: 41
+mulata1: 1
+rachel: 22
+ross: 32
+rubia1: 3
+Mean size of the face squares: 4.590698e+001
+Session: 2 Faces: 165
+castanya1: 5
+chedler: 25
+fibi: 31
+joey: 10
+monica: 36
+monica+: 1
+mulata1: 3
+rachel: 20
+ross: 29
+rubia1: 5
+Mean size of the face squares: 4.690909e+001
+Session: 3 Faces: 166
+: 2
+castanya1: 5
+chedler: 24
+fibi: 31
+joey: 11
+monica: 33
+mulata1: 3
+rachel: 22
+ross: 29
+rubia1: 5
+ss: 1
+Mean size of the face squares: 4.779518e+001
