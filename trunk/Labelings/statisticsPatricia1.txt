@@ -1,0 +1,32 @@
+Video 1
+
+Observer: Patricia Marquez Valle
+
+Labeled faces at each session: 
+Session: 1 Faces: 157
+Chandler: 22
+Joey: 11
+Monica: 35
+Phoebe: 28
+Rachel: 23
+Ross: 26
+Unknown: 12
+Mean size of the face squares: 3.478981e+001
+Session: 2 Faces: 165
+Chandler: 24
+Joey: 11
+Monica: 37
+Phoebe: 29
+Rachel: 22
+Ross: 27
+Unknown: 15
+Mean size of the face squares: 3.397037e+001
+Session: 3 Faces: 165
+Chandler: 23
+Joey: 11
+Monica: 38
+Phoebe: 29
+Rachel: 21
+Ross: 29
+Unknown: 14
+Mean size of the face squares: 3.504848e+001

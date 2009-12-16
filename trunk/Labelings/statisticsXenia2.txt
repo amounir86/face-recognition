@@ -1,0 +1,31 @@
+Video2
+
+Observer: Xenia Alba
+
+Labeled faces at each session: 
+Session: 1 Faces: 99
+Chanler: 27
+Joey: 6
+Monica: 19
+Phoebe: 14
+Rachel: 13
+Ross: 19
+Unknown: 1
+Mean size of the face squares: 2.759596e+001
+Session: 2 Faces: 79
+Chanler: 22
+Joey: 3
+Monica: 16
+Phoebe: 10
+Rachel: 10
+Ross: 16
+Unknown: 2
+Mean size of the face squares: 2.735443e+001
+Session: 3 Faces: 71
+Chanler: 20
+Monica: 16
+Phoebe: 10
+Rachel: 7
+Ross: 16
+Unknown: 2
+Mean size of the face squares: 2.760563e+001
