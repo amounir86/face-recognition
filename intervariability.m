@@ -34,4 +34,4 @@ for i=1
     end
 end
 
-overlap_p = total_overlap / overlappings;
+overlap_p = (total_overlap + misses) / (overlappings + misses);
