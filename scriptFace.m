@@ -1,4 +1,4 @@
-load video2
+load video1
 obs_name = 'Face detector';
 fid = fopen('Labeling1-Facedetect.txt','w');
 fprintf(fid,'video1.mat\n');
