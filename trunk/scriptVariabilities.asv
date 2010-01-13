@@ -1,4 +1,5 @@
-video1 = {'Anjan1.txt','Cristian1.txt','Isaac1.txt','Lluis1.txt','Patricia1.txt'};
+% video1 = {'Anjan1.txt','Cristian1.txt','Isaac1.txt','Lluis1.txt','Patricia1.txt'};
+video1 = {'Lluis1_sessio1.txt
 missess = zeros(length(video1));
 overlaps = zeros(length(video1));
 
