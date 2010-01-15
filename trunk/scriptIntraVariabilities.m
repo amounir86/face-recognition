@@ -14,11 +14,13 @@ for i=1:length(session)
     end    
 end
 
-figure,imagesc(overlaps + overlaps'),colorbar
-figure,imagesc(missess + missess'),colorbar
+figure,imagesc(overlaps + overlaps'),colorbar,title('Overlaps')
+figure,imagesc(missess + missess'),colorbar,title('Misses')
 
-disp(['Mean overlapping error: ' num2str(mean(mean(overlaps)))])
-disp(['Mean number of missess: ' num2str(mean(mean(missess)))])
+overlap_values = [overlaps(1,2:end) overlaps(2,3:end) overlaps(3,4:end) overlaps(4,5:end) overlaps(5,6)];
+misses_values = [missess(1,2:end) missess(2,3:end) missess(3,4:end) missess(4,5:end) missess(5,6)];
 
-
-
+disp(['Mean overlapping error: ' num2str(mean(overlap_values))])
+disp(['Std overlapping error: ' num2str(std(overlap_values))])
+disp(['Mean number of missess: ' num2str(mean(misses_values))])
+disp(['Std number of missess: ' num2str(std(misses_values))])
