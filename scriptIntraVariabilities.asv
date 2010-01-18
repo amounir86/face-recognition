@@ -1,5 +1,4 @@
-%session = {'Labelings/Labeling2-Facedetect_CORRECT_session1.txt','Labelings/Labeling2-Facedetect_CORRECT_session2.txt','Labelings/Labeling2-Facedetect_CORRECT_session3.txt'};
-session = {'FDLabeled-s1.txt','FDLabeled-s2.txt','FDLabeled-s3.txt'};
+session = %{'Labelings/Ahmed2_session1.txt','Labelings/Ahmed2_session2.txt','Labelings/Ahmed2_session3.txt', };
 missess = zeros(length(session));
 overlaps = zeros(length(session));
 
@@ -19,7 +18,7 @@ figure,imagesc(overlaps + overlaps'),colorbar,title('Overlaps')
 figure,imagesc(missess + missess'),colorbar,title('Misses')
 
 overlap_values = [overlaps(1,2:end) overlaps(2,3:end)];% overlaps(3,4:end) overlaps(4,5:end) overlaps(5,6)];
-misses_values = [missess(1,2:end) missess(2,3:end) ];%missess(3,4:end) missess(4,5:end) missess(5,6)];
+misses_values = [missess(1,2:end) missess(2,3:end)];% missess(3,4:end) missess(4,5:end) missess(5,6)];
 
 disp(['Mean overlapping error: ' num2str(mean(overlap_values))])
 disp(['Std overlapping error: ' num2str(std(overlap_values))])
