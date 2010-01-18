@@ -1,4 +1,4 @@
-function statistics(inputFile,outputFile)
+function a=statistics(inputFile,outputFile)
 % labeling = readFile('ANNOTATION_VIDEO2_MAX.txt');
 labeling = readFile(inputFile);
 
@@ -9,9 +9,11 @@ fprintf(fid,'%s\n',labeling.expertname);
 
 fprintf(fid,'Labeled faces at each session: \n');
 
+X=[];
 for i=1:3
    fprintf(fid,'Session: %d ',i);
-   fprintf(fid,'Faces: %d\n',length(labeling.data{i}));   
+   fprintf(fid,'Faces: %d\n',length(labeling.data{i}));
+   X(i)=length(labeling.data{i});
    a = unique({labeling.data{i}.label});
    %fprintf(fid,'Characters: %d ',length(a));
    for j=1:length(a)
@@ -23,5 +25,6 @@ for i=1:3
    fprintf(fid,'%d\n',a);
    
 end
+a=std(X);
 
 fclose(fid)

@@ -1,7 +1,5 @@
 video1.mat
-
 Observer: Lluis
-
 Session: 1
 2 [1.835000e+002 39 1.350000e+001 1.350000e+001] ross
  3 [173 64 50 50] ross
