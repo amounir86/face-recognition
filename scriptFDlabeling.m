@@ -1,12 +1,12 @@
 %INTERVARIABILITY Computes the overlapping error between two different
 %annotations (intervariability), and also the overlapping error between two
 %different sessions (intravariability)
-fid = fopen('FDLabeled.txt','w');
-fprintf(fid,'video1.mat\n');
+fid = fopen('FDLabeled2.txt','w');
+fprintf(fid,'video2.mat\n');
 fprintf(fid,'Observer: Face detector\n');
 for z = 1:3
-    labelings1= readFile('Labelings/Labeling1-Facedetect_CORRECT.txt',z);
-    labelings2= readFile('Labelings/Lluis1.txt',z);
+    labelings1= readFile('Labelings/Labeling2-Facedetect_CORRECT.txt',z);
+    labelings2= readFile('Labelings/Ahmed2.txt',z);
     fprintf(fid,'Session: %d\n',z);
     % % labelings1 = readFile(file1,1);
     % % labelings2 = readFile(file2,1);
@@ -32,7 +32,7 @@ for z = 1:3
                                            [facesFrame2(l).x-facesFrame2(l).w/2 facesFrame2(l).y-facesFrame2(l).h/2 facesFrame2(l).w facesFrame2(l).h]);
                     union_ = facesFrame1(k).w*facesFrame1(k).h + facesFrame2(l).w*facesFrame2(l).h - intersection;
                     overlap(k,l)= intersection / union_;
-                    if overlap(k,l)>0.6
+                    if overlap(k,l)>0.5
                         fprintf(fid,'%d [%d %d %d %d] %s\n',facesFrame1(k).framenum,facesFrame1(k).x, facesFrame1(k).y,facesFrame1(k).w,facesFrame1(k).h, facesFrame2(l).label);
                     end
                 end
