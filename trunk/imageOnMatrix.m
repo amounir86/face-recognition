@@ -24,6 +24,7 @@ for i = 1 : length(imgnames)
         labeledArray{i} = 'unknown';
     end
     image = imread(name);
+    image=rgb2gray(image);
     imgvector = reshape(image,1,prod(size(image)));
     imgMatrix(i,:) = imgvector;
 
@@ -48,6 +49,7 @@ for i = 1 : length(imgnames2)
         labeledArray{a+i} = 'unknown';
     end
     image = imread(name);
+    image=rgb2gray(image);
     imgvector = reshape(image,1,prod(size(image)));
     imgMatrix(a+i,:) = imgvector;
 
