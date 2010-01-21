@@ -1,0 +1,25 @@
+DISCUSSION FOR KNN RESULTS
+
+##ROCcurveKNN_1to100_Kfold5_2.fig
+
+K value found to work best: 6
+Correct rate of 0.7628
+Specificity: 0.9766
+Sensitivity: 0.8657
+confmat: KNN_6NN_KFold5.fig
+
+
+
+DISCUSSION FOR SVM RESULTS
+
+Classifying only known faces --> Correct rate of 0.8430 0.8367
+Specificity: 0.8052
+Sensitivity: 0.7343
+confmat: SVM_linear_Kfold5_3.fig
+
+Classifying unknown faces --> Correct rate of 0.7535
+Specificity: 0.9847
+Sensitivity: 0.6858
+conmat: SVM_linear_Kfold5_classifyUnknown.fig
+
+No ROC curve because with linear kernel we have no parameters. Well, we have the C parameter, but it doesn't change the result.
