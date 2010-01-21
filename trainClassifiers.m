@@ -10,19 +10,25 @@ function [classifiers] = trainClassifiers(trainingImages, imageLabels)
 % OUTPUT: classifiers, a vector of trained classifiers.
 
     % Choose the distinct labels.
-    distinctLabels = unique(imageLabels);
+    distinctLabels = setdiff(unique(imageLabels),{'unknown'});
 
     % Iterate on every distinct labels
-    for i = 1:size(distinceLabels)
+    for i = 1:size(distinctLabels)
 
         % Initialize the classifier labels
         clLabels = imageLabels;
 
         % Choose the images that don't have this label
-        clLabels(find(clLabels ~= distinctLabels(i))) = 'NONE';
+               
+        index = strmatch(distinctLabels{i}, clLabels);
+        diferences = setdiff(1:length(imageLabels),index);
+        
+        for j=1:length(diferences)
+            clLabels{diferences(j)} = 'NONE';
+        end
 
         % Build the One-Against-All classifier
-        classifiers(i) = svmtrain(trainingImages, clLabels);
+        classifiers(i) = svmtrain(trainingImages, clLabels, 'METHOD', 'LS');
 
     end
 
