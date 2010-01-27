@@ -8,10 +8,14 @@ labelings2 = readFile(file2,session_num);
 misses=0;
 total_overlap=0;
 overlappings = 0;
-for i=1
+for i=session_num
     frames1=unique([labelings1.data{i}.framenum]);
     frames2=unique([labelings2.data{i}.framenum]);
     commonFrames=intersect(frames1,frames2);
+    notCommon = setdiff(frames1,commonFrames);
+    for j=notCommon
+        misses = misses + sum([labelings1.data{i}.framenum] == j);
+    end
     for j=commonFrames
         facesFrame1=labelings1.data{i}([labelings1.data{i}.framenum]==j);
         facesFrame2=labelings2.data{i}([labelings2.data{i}.framenum]==j);
@@ -35,3 +39,4 @@ for i=1
 end
 
 overlap_p = (total_overlap + misses) / (overlappings + misses);
+%overlap_p = total_overlap / overlappings;
